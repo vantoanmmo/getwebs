@@ -12,8 +12,6 @@
       "methods": ["GET"],
       "dest": "/api/crawl"
     }
-  ],
-  "env": {
-    "PROXY_URL": "@your-proxy-env-name"
-  }
+  ]
+  
 }
