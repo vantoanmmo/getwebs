@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/crawl.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/crawl",
+      "methods": ["GET"],
+      "dest": "/api/crawl"
+    }
+  ],
+  "env": {
+    "PROXY_URL": "@your-proxy-env-name"
+  }
+}
